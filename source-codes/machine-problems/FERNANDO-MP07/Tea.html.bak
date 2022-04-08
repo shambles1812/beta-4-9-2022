@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+
+    <script src="https://kit.fontawesome.com/6c40df9b8d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../Drink Orders (Forms) MP06/DrinkCSS.css">
+
+    <link rel="stylesheet" href="../Drink Orders (Forms) MP06/StickyNavCSS.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <img class="bg" src="https://i.redd.it/01sk42ne9rk61.jpg" />
+
+
+    <div class="menu">
+
+        <div class="NavContainer">
+            <div id="navbar">
+                <ul>
+                    <li><a href="Main.html"> Home</a></li>
+                    <li>
+                        <a href="Coffee.html"> <i class="fa-solid fa-mug-saucer"></i> Coffee</a>
+                    </li>
+                    <li>
+                        <a class="active" href="Tea.html"> <i class="fa-brands fa-bitbucket"></i> Tea</a>
+                    </li>
+                    <li>
+                        <a href="Shake.html"> <i class="fa-solid fa-blender"></i> Shake</a>
+                    </li>
+                    <li>
+                        <a href="Order.html"> <i class="fa-solid fa-cart-arrow-down"></i> Order</a>
+                    </li>
+                    <li>
+                        <a href="About Us.html"> <i class="fa-brands fa-angular"></i> About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 style="text-align: center; color: rgb(19, 160, 7);">TEA </h1>
+    <p style="text-align: center;">A beverage produced by steeping in freshly boiled water the young leaves and leaf buds of the tea plant, Camellia sinensis.</p>
+    <br><br>
+
+    <div class="div-container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#tea1">Green Tea</a></li>
+            <li><a data-toggle="tab" href="#tea2">Lemon Tea</a></li>
+            <li><a data-toggle="tab" href="#tea3">Ginger Tea</a></li>
+        </ul>
+    </div>
+
+    <div class="tab-content">
+        <div id="tea1" class="tab-pane fade in active">
+            <h2 style="text-align: center; color: rgb(19, 160, 7);"> GREEN TEA</h2>
+            <div class="DivTea">
+
+                <img src="https://media.istockphoto.com/photos/tea-picture-id1135520405?k=20&m=1135520405&s=612x612&w=0&h=1fnHwNIAyPxtnIxCw7yH2vyTozWXAdWCInQ2AMvOMzg=" alt="Green Tea" width="486px" height="385px" opacity="0.7">
+
+            </div>
+            <br>
+            <p style="text-align: center;"><span style="color: rgb(19, 160, 7);">Green Tea</span> is brewed from dried leaves of Camellia sinensis but it should be unoxidized to preserve antioxidants. </p>
+        </div>
+        <div id="tea2" class="tab-pane fade">
+            <h2 style="text-align: center; color: rgb(212, 209, 21);"> LEMON TEA</h2>
+            <div class="DivTea">
+
+                <img src="https://www.whiskaffair.com/wp-content/uploads/2020/03/Lemon-Tea-4.jpg" alt="Lemon Tea" width="486px" height="385px" opacity="0.7">
+
+            </div>
+            <br>
+            <p style="text-align: center;">Prepared from Black Tea or Green Tea, <span style="color: rgb(151, 149, 16);">Lemon Tea</span> is a hot drink added with the right amount of lemon juice. The amount is based from the person's preference. </p>
+        </div>
+        <div id="tea3" class="tab-pane fade">
+            <h2 style="text-align: center; color: rgb(202, 168, 13);"> GINGER TEA</h2>
+            <div class="DivTea">
+
+                <img src="https://health.clevelandclinic.org/wp-content/uploads/sites/3/2021/10/gingerTeaBenefits-656808066_770x533.jpg" alt="Ginger Tea" width="486px" height="385px" opacity="0.7">
+
+            </div>
+            <br>
+            <p style="text-align: center;"><span style="color: rgb(202, 168, 13);">Ginger Tea</span> has a sweet spicy flavour coming from the roots of a Ginger plant. Mostly prepared by steeping the ginger in hot water to extract flavour.</p>
+        </div>
+
+    </div>
+    <!--
+<table style="text-align: center">
+    <tr>
+        <th colspan=3>Go Back to <a href="Main.html">Main</a> page | Proceed to <a href="Order.html">Order</a></th>
+    </tr>
+    <tr>
+      <td>
+        <h2 style="color: rgb(19, 160, 7);"> GREEN TEA</h2>
+        <div class= "DivTea">
+
+            <img src="https://media.istockphoto.com/photos/tea-picture-id1135520405?k=20&m=1135520405&s=612x612&w=0&h=1fnHwNIAyPxtnIxCw7yH2vyTozWXAdWCInQ2AMvOMzg=" alt="Green Tea" width="500px" height="400px" opacity="0.7">
+
+        </div>
+        <br>
+        <p><span style="color: rgb(19, 160, 7);">Green Tea</span> is brewed from dried leaves of Camellia sinensis but it should be unoxidized to preserve antioxidants. </p>
+      </td>
+      <td>
+        <h2 style="color: rgb(212, 209, 21);"> LEMON TEA</h2>
+        <div class= "DivTea">
+
+            <img src="https://www.whiskaffair.com/wp-content/uploads/2020/03/Lemon-Tea-4.jpg" alt="Lemon Tea" width="500px" height="400px" opacity="0.7">
+
+        </div>
+        <br>
+        <p>Prepared from Black Tea or Green Tea, <span style="color: rgb(151, 149, 16);">Lemon Tea</span> is a hot drink added with the right amount of lemon juice. The amount is based from the person's preference.  </p>
+      </td>
+      <td>
+        <h2 style="color: rgb(202, 168, 13);"> GINGER TEA</h2>
+        <div class= "DivTea">
+
+            <img src="https://health.clevelandclinic.org/wp-content/uploads/sites/3/2021/10/gingerTeaBenefits-656808066_770x533.jpg" alt="Ginger Tea" width="500px" height="400px" opacity="0.7">
+
+        </div>
+        <br>
+        <p><span style="color: rgb(202, 168, 13);">Ginger Tea</span> has a sweet spicy flavour coming from the roots of a Ginger plant. Mostly prepared by steeping the ginger in hot water to extract flavour.</p>
+      </td>
+    </tr>
+  </table> -->
+</body>
+
+</html>

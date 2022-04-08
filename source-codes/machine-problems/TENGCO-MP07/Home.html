@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<style type="text/css">
+		    h1          {font-family: cursive Apple Chancery ;
+                         font-style: italic;
+                         font-size: 60px;
+                         text-align: center;}
+
+            .img_bg     {background-image: url(header.jpg);
+                         height: 180px;}
+
+             body       {background-image:  url(order_bg.jpg);}
+
+             nav        {background-color: #e3b79c;
+                         height: 40px;}
+
+            .navi       {display: inline;
+                         font-size: 28px;
+                         padding: 5px;}
+
+			.active 
+            .navi:hover {opacity: 0.5;
+                         color: white;}
+
+            .menu       {margin: 290px;
+                         display: inline;} 
+
+
+            .h1_box     {position: absolute;
+                         left: 50%;
+                         top: 10%;
+                         transform: translate(-50%, -50%);
+                         border: 5px;
+                         padding: 10px;
+                         color: #974942;}
+			
+			.container {align-content: center;}
+
+            .banner_1   {float:left;
+			            width:935px;
+			            height:480px;
+			            margin-left: 0px;
+			            margin-top: 0px;}
+
+            .banner_2   {float:right;
+			             width:940px;
+			             height:480px;
+			             border:solid #eeeee6;
+			             margin-right: 0px;
+			             margin-top: 0px;}
+
+            .banner_4   {float:left;
+			             width:935px;
+			             height:480px;
+			             margin-left: 0px;
+			             margin-top: 0px;}
+
+            .banner_3   {float:right;
+			             width:940px;
+			             height:480px;
+			             border:solid #eeeee6;
+			             margin-right: 0px;
+			             margin-top: 0px;}
+
+            .banner_5   {float:left;
+			             width:935px;
+			             height:480px;
+			             margin-left: 0px;
+			             margin-top: 0px;}
+
+            .banner_6   {float:right;
+			             width:940px;
+			             height:480px;
+			             border:solid #eeeee6;
+			             margin-right: 0px;
+			             margin-top: 0px;}
+
+            #quote_1    {font-family:fantasy ;
+			             font-size: 100px;
+			             color: #351f16;}
+
+            #quote_2    {font-family:fantasy ;
+			             font-size: 100px;
+			             color: #351f16;}
+
+            #quote_3    {font-family:fantasy ;
+			             font-size: 100px;}
+
+            img:hover   {opacity: 60%;}
+
+	</style>
+</head>
+<body>
+	<header >
+        <div class="img_bg">
+            <div class="h1_box">
+            	<h1> &#9729 Drinkable &#9729</h1>
+            </div>
+	    </div> 
+    </header>
+
+	<nav>
+		<center>
+    		<ul class="menu">
+              <li class="navi"><a style="color: #efeae6;" href="Coffee.html"><i class="fa fa-coffee"></i>Coffee</a></li>
+              <li class="navi"><a style="color: #efeae6;" href="Tea.html"><i class="fa fa-leaf"></i> Tea</a></li>
+              <li class="navi" ><a style="color: #efeae6;" href="Shake.html"> Shake</a></li>
+            </ul>
+	    </center>
+	</nav>
+
+	<article>
+		<div class="container">
+			<div class="banner_1">
+			  <img src="coffee_banner.jpg">     	
+			</div>
+	
+			<div class="banner_2">
+				<div id="quote_1">
+				 <p align="center"> MORE EXPRESSO <br>
+					LESS DEPRESSO</p>
+				</div>
+			</div>
+	
+			<div class="banner_3">
+				<img src="tea_banner.png">
+			</div>
+	
+			<div class="banner_4">
+				<div id="quote_2">
+				 <p align="center"> A CUP OF TEA IS <br>
+					A CUP OF PEACE</p>
+				</div>
+			</div>
+	
+			<div class="banner_5">
+				<img src="shake_banner.png">
+			</div>
+	
+			<div class="banner_6">
+				<div id="quote_3">
+				<p align="center"> <span style="color: #351f16;">WHEN LIFE GETS TOUGH <br>
+					JUST </span><i><span style="color: #ff8da0;">SHAKE</span></i> <span style="color: #351f16;">IT OFF </span></p>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<script>
+		// Add active class to the current button (highlight it)
+		var header = document.getElementById("menu");
+		var btns = header.getElementsByClassName("navi");
+		for (var i = 0; i < navi.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		  var current = document.getElementsByClassName("active");
+		  current[0].className = current[0].className.replace(" active", "");
+		  this.className += " active";
+		  });
+		}
+	</script>
+   
+
+</body>
+</html>

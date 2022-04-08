@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/cad6e57613.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+    <title>Liz' Drink Gallery - MP06</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- navigation bar -->
+    <div class="header" id="top">
+        <div class="top_image_banner"></div>
+    </div>
+
+    <div id="navbar">
+        <nav class="navbar">
+            <div class="navigation_bar">
+                <a class="navigation-bar-item active-item" href="index.html">
+                    <i class="fa-solid fa-house home"></i>
+                </a>
+                <a class="navigation-bar-item" href="frappuccino.html" target="_self">
+                    <i class="icons fa-solid fa-blender"></i>
+                    <span>Frappuccino</span>
+                </a>
+                <a class="navigation-bar-item" href="milktea.html" target="_self">
+                    <i class="icons fa-solid fa-whiskey-glass"></i>
+                    <span>Milktea</span>
+                </a>
+                <a class="navigation-bar-item" href="juice.html" target="_self" href=>
+                    <i class="icons fa-solid fa-martini-glass"></i>
+                    <span>Juice</span>
+                </a>
+                <a class="navigation-bar-item" href="order.html" target="_self">
+                    <i class="icons fa-solid fa-cart-shopping"></i>
+                    <span>Order</span>
+                </a>
+                <a class="navigation-bar-item" href="about.html" target="_self">
+                    <i class="icons fa-solid fa-file-circle-check"></i>
+                    <span>About</span>
+                </a>
+                <a class="navigation-bar-item" href="ordersuccess.html" target="_blank">
+                    <i class="icons fa-solid fa-circle-question"></i>
+                    <span>Results</span>
+                </a>
+
+            </div>
+        </nav>
+    </div>
+
+    <!-- end of nav bar -->
+
+    <div class="d-flex w-100">
+        <img width="900px" src="./images/kawaii.jpg">
+        <div class="centerText">
+            <h2>Kawaii Drink Store</h2>
+            <p>
+                Our store is open everyday, 24/7! Come visit the best drink house in the galaxy!
+            </p>
+        </div>
+    </div>
+
+    <div class="drinksPresentation">
+        <div class="gridWrapper">
+            <h1 class="drinkText">Frappuccino</h1>
+            <!-- drink 1 -->
+            <a class="drinkItem d1">
+                <span>Strawberry & Caramel<br />Creme Frappuccino®</span>
+                <img class="drinkItemImage" src="./images/starbucks-frapuccino/starbucks-frappucino-1.png" />
+            </a>
+            <!-- drink 2 -->
+            <a class="drinkItem d2">
+                <span>Salted Caramel Mocha Frappuccino®</span>
+                <img class="drinkItemImage" src="./images/starbucks-frapuccino/starbucks-frappucino-2.png" />
+            </a>
+            <!-- drink 3 -->
+            <a class="drinkItem d3">
+                <span>Chai Crème Frappuccino®</span>
+                <img class="drinkItemImage" src="./images/starbucks-frapuccino/starbucks-frappucino-3.png" />
+            </a>
+            <h1 class="drinkText">Milktea</h1>
+            <!-- drink 4 -->
+            <a class="drinkItem d4">
+                <span>Macao Black Pearl MilkTea</span>
+                <img class="drinkItemImage" src="./images/macao-milktea/macao-milktea-1.png" />
+            </a>
+            <!-- drink 5 -->
+            <a class="drinkItem d5">
+                <span>Chestnut Cream Uji Matcha</span>
+                <img class="drinkItemImage" src="./images/macao-milktea/macao-milktea-2.png" />
+            </a>
+            <!-- drink 6 -->
+            <a class="drinkItem d6">
+                <span>Cream Cheese Oreo Milk Tea</span>
+                <img class="drinkItemImage" src="./images/macao-milktea/macao-milktea-3.png" />
+            </a>
+            <h1 class="drinkText">Juice</h1>
+            <!-- drink 7 -->
+            <a class="drinkItem d7">
+                <span>Old Orchard's Apple Cranberry Juice</span>
+                <img class="drinkItemImage" src="./images/old-orchard/old-orchard-juice-1.png" />
+            </a>
+            <!-- drink 8 -->
+            <a class="drinkItem d8">
+                <span>Old Orchard's Orange Juice</span>
+                <img class="drinkItemImage" src="./images/old-orchard/old-orchard-juice-2.png" />
+            </a>
+            <!-- drink 9 -->
+            <a class="drinkItem d9">
+                <span>Old Orchard's Apple Juice</span>
+                <img class="drinkItemImage" src="./images/old-orchard/old-orchard-juice-3.png" />
+            </a>
+        </div>
+    </div>
+    <footer>
+        <p>made by: Felise Jann S. Sanchez</p>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        }
+
+        var navbar = document.getElementById('navbar')
+        var sticky = navbar.offsetTop
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add('sticky')
+            } else {
+                navbar.classList.remove('sticky')
+            }
+        }
+    </script>
+</body>
+
+</html>

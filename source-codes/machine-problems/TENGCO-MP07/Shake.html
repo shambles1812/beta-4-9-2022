@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title> Tea </title>
+   <style type="text/css">
+     
+        h1         {font-family: cursive Apple Chancery ;
+                     font-style: italic;
+                     font-size: 60px;}
+
+        .img_bg    {background-image: url(header.jpg);
+                     height: 180px;}
+
+        body       {background-color: #eeeee6;}
+
+        nav        {background-color: #e3b79c;
+                     height: 40px;}
+
+        .navi       {display: inline;
+                     font-size: 28px;
+                     padding: 5px;}
+
+        .active 
+        .navi:hover {opacity: 0.5;
+                     color: white;}
+
+        .menu       {margin: 290px;
+                     display: inline;}            
+         
+        .h1_box    {position: absolute;
+                     left: 50%;
+                     top: 10%;
+                     transform: translate(-50%, -50%);
+                     border: 5px;
+                     padding: 10px;
+                     color: #974942;}
+
+                     table       {padding: 10px;
+                     width: 100%;}
+
+        table,
+        tr, th      {border: 1px solid black;
+                     border-collapse: collapse;}
+
+        th, h2      {color: #b89076;}
+
+        tr, th      {padding: 15px;}
+
+        a           {color: #ff8da0;}
+
+        img         {border-radius: 0px;
+                     border-color: solid;}
+
+        img:hover   {opacity: 60%;}             
+   </style>
+</head>
+<body>
+  
+  <header >
+        <div class="img_bg">
+            <div class="h1_box">
+              <h1> &#9729 Drinkable &#9729</h1>
+            </div>
+      </div> 
+    </header>
+
+  <nav>
+    <center>
+    <ul class="menu">
+              <li class="navi"><a style="color: #efeae6;" href="Home.html"><i class="fa fa-bookmark-o"></i>Home</a></li>
+              <li class="navi"><a style="color: #efeae6;" href="about.html"><i class="fas fa-users"></i>About</a></li>
+              <li class="navi"><a style="color: #efeae6;" href="Coffee.html"><i class="fa fa-coffee"></i>Coffee</a></li>
+              <li class="navi"><a style="color: #efeae6;" href="Tea.html"><i class="fa fa-leaf"></i> Tea</a></li>
+              <li class="navi" ><a style="color: #efeae6;" href="Shake.html"> Shake</a></li>
+              <li class="navi"><a style="color: #efeae6;" href="order-t.html"><i class="fa fa-credit-card"></i>Order</a></li>
+         </ul>
+    </center>
+  </nav>
+  
+    <table border="1">
+      <caption> 
+        <h1 style="color: #ff8da0;">Shake For Your Theraphy</h1> 
+        <h2>Milkshakes are good for the your body, mind and soul! </h2>
+      </caption>
+
+      <tr>
+          <th> <img src="Unicorn rainbow shake.jpg"> </th>
+          <th> <img src="RED VELVET Milkshake.jpg"> </th>
+          <th> <img src="HAZELNUT GALORE.jpg"> </th>
+      </tr>
+
+      <tr>
+          <th> UNICORN RAINBOW SHAKE </th>
+          <th> RED VELVET MILKSHAKE</th>
+          <th> HAZELNUT GLAMORE</th>
+      </tr>
+      
+      <tr>
+          <th align="justify">
+            Our Unicorn rainbow shake is bubble gum milkshake topped with <br>
+            everything NICE! You'll love the magic of cotton candy, cupcake, <br>
+            macaron and a rainbow cookie - with all these tidbits this shake <br>
+            is a feast in a jar for your kid or the kid inside you!
+          </th>
+
+          <th align="justify"><br> 
+             Know what true happiness is? A jar of our RED VELVET milkshake! <br>
+             Make your heart happy with shake therapy
+        
+          <th align="justify"><br> 
+             Goodness in jar is what our HAZELNUT GLAMORE 𝐢𝐬!<br>
+             Simply spectacular!
+     </tr>
+      
+     <tr align="center">
+          <th align="justify"><br>
+            Unicorn Rainbow Shake - Php280.00 </th>
+
+     <th align="justify"><br> 
+            Red Velvet Milkshake- Php280.00 </th>
+          
+     <th align="justify"><br> 
+           Hazelnut Glamore - Php180.00 </tr>
+    </table>
+
+    <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("menu");
+      var btns = header.getElementsByClassName("navi");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+      }
+    </script>
+
+</body>
+</html>

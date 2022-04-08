@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Form Page</title> 
+
+        <style type="text/css">
+
+            h1          {font-family: cursive Apple Chancery ;
+                         font-style: italic;
+                         font-size: 60px;
+                         text-align: center;}
+
+            .img_bg     {background-image: url(header.jpg);
+                         height: 180px;}
+
+             body       {background-image:  url(order_bg.jpg);}
+
+             nav        {background-color: #e3b79c;
+                         height: 50px;
+                         word-spacing:0 ;}
+
+            .navi       {display: inline;
+                         font-size: 28px;
+                         padding: 5px;}
+
+            .active 
+            .navi:hover {opacity: 0.5;
+                         color: white;}
+
+            .menu       {margin: 290px;
+                         display: inline;} 
+
+            .h1_box     {position: absolute;
+                         left: 50%;
+                         top: 10%;
+                         transform: translate(-50%, -50%);
+                         border: 5px;
+                         padding: 10px;
+                         color: #974942;}
+
+            h2          {color: #974942;}
+
+            table       {background-color: #e3b79c;
+                         color: #ffffff;}
+
+            .input      {width: 300px;}
+        </style>
+    </head>
+        <header >
+        <div class="img_bg">
+            <div class="h1_box">
+              <h1> &#9729 Drinkable &#9729</h1>
+            </div>
+      </div> 
+    </header>
+    
+    <body>
+    <nav>
+      <center>
+      <ul class="menu">
+              <li class="navi"><a style="color: #efeae6;" href="Home.html"><i class="   fa fa-bookmark-o"></i>Home</a></li>
+              <li class="navi"><a style="color: #efeae6;" href="about.html"><i class="fas fa-users"></i>About</a></li>
+              <li class="navi"><a style="color: #efeae6;" href="Coffee.html"><i class="fa fa-coffee"></i>Coffee</a></li>
+              <li class="navi"><a style="color: #efeae6;" href="Tea.html"><i class="fa fa-leaf"></i> Tea</a></li>
+              <li class="navi" ><a style="color: #efeae6;" href="Shake.html"> Shake</a></li>
+              <li class="navi"><a style="color: #efeae6;" href="order-t.html"><i class="fa fa-credit-card"></i>Order</a></li>
+         </ul>
+      </center>
+    </nav>
+           
+    <form id="form1" runat="server">    
+    <div>                  
+    </div>     
+    <h2 align="center"> Order</h2>    
+    <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">    
+       <tr>    
+             <td  align="right">Name:</td>    
+             <td><input type ="text" id ="name" name ="Fname" placeholder ="Enter Name"  class="input" required /></td>    
+       </tr>    
+       
+       <tr>    
+             <td  align="right">E-mail:</td>    
+             <td><input type ="email" id ="email" name ="email" placeholder ="Enter E-mail" class="input" required></td>    
+       </tr>    
+
+       <tr>    
+             <td  align="right">Message:</td>    
+             <td><input type ="text" s placeholder ="Message" class="input" /></td>    
+       </tr>    
+
+       <tr>    
+             <td  align="right">Category Type:</td>    
+             <td><input  type ="radio" id = "coffee" name ="gender" value="Coffee" required/> Coffee 
+             <input type ="radio" id = "tea" name ="gender" value="Tea" required/> Tea 
+             <input type ="radio" id = "shake" name ="gender" value="Shake" required/> Shake</td> 
+       </tr>    
+
+       <tr>    
+             <td  align="right">Drinks:</td>    
+             <td><select name="drink" id="drink" class="drink" required />
+                            <option selected="" value="0" >-- Select Type of drink --</option>
+                            <option value="2.15 coffee" >2.15 coffee</option>
+                            <option value="Salted Caramel Iced Coffee">Salted Caramel Iced Coffee</option>
+                            <option value="Cafe Latte">Cafe Latte</option>
+                            <option value="Matcha Latte">Matcha Latte</option>
+                            <option value="Blue Pea Tea">Blue Pea Tea</option>
+                            <option value="Genmaicha Tea">Genmaicha Tea</option>
+                            <option value="Unicorn rainbow shake">Unicorn rainbow shake</option>
+                            <option value="Redvelvet Milk shake">Redvelvet Milk Shake</option>
+                            <option value="Hazelnut Glamore">Hazenut sGlamore</option>
+                        </select></td>    
+       </tr>    
+
+       <tr>    
+             <td  align="right">Quantity:</td>    
+             <td><input type ="number" placeholder="Enter Quantity" class="input" /></td>    
+       </tr>    
+
+       <tr>    
+             <td  align="right" colspan="2"><center><input type="Submit" > </center></td>    
+             
+              
+       </tr>    
+   </table>
+</form>
+
+<script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("menu");
+      var btns = header.getElementsByClassName("navi");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+      }
+</script>
+
+       
+    </body>
+</html>

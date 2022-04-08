@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MP07-Villafuerte</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bc5d732e0a.js" crossorigin="anonymous"></script>
+  </head>
+  <body >
+    <div id="image-banner">
+      <img src="images/header.jpg">
+  </div>
+  <div id = "Nav" >
+    <span>
+      <a href = "coffee.html">
+        Home
+      </a>
+      <i class="fa-solid fa-mug-hot"></i>
+      <a href = "coffee.html">
+        Coffee
+      </a>
+      |
+      <i class="fa-solid fa-mug-saucer"></i>
+      <a href = "tea.html">
+        Tea
+      </a>
+      |
+      <i class="fa-solid fa-beer-mug-empty"></i>
+      <a href = "shake.html">
+        Shake
+      </a>
+      |
+      <a href = "order.html">
+        Order
+      </a>
+      |
+      <a href = "about.html">
+        About
+      </a>
+    </span>
+  </div>
+      <div id="form_container">
+        <h1>Order Here!</h1>
+        <div id="order_form" class = "category-container" >
+          <form method="GET" action="results.html">
+  
+            <label class="form_label" for="fname">Name:</label><br>
+            <input type="text" id="full_name" name="full_name" value="Christian Joseph N. Villafuerte"><br><br>
+  
+            <label class="form_label" for="email">Email:</label><br>
+            <input type="text" id="email" name="email" value="cjvillafuerte@mp04.com"><Br><br>
+  
+            <label class="form_label" for="message">Message:</label><br>
+            <textarea name="message" >Enter text here...</textarea><br><br>
+  
+            <label class="form_label" for="category">Category Type:</label><br>
+            <input type="radio" " name="category" value="Coffee">
+            <label for="coffee">Coffee</label><br>
+            <input type="radio"  name="category" value="Tea">
+            <label for="tea">Tea</label><br>
+            <input type="radio"  name="category" value="Shake">
+            <label for="shake">Shake</label>
+            <br><br>
+  
+            <label class="form_label" for="drink_choice">Choose a drink:</label><br> 
+         <select name="drink_choice">
+          <option disabled>-----Coffee-----</option>
+          <option>Veranda Blend®</option>
+          <option>Caffè Misto</option>
+          <option>Pike Place® Roast</option>
+  
+          <option disabled>-----Tea-----</option>
+          <option>Earl Grey Tea</option>
+          <option>London Fog Tea Latte</option>
+          <option>Royal English Breakfast Tea Latte</option>
+  
+          <option disabled>-----Shake-----</option>
+          <option>Mocha Cookie Crumble Frappuccino® Blended Beverage</option>
+          <option>Sugar Cookie Almondmilk Frappuccino® Blended Beverage</option>
+          <option>Espresso Frappuccino® Blended Beverage</option>
+  
+    
+      </select><br><br>
+      <label for="quantity">Enter Quantity:</label><br>
+      <input type="number"name="quantity" value="1"><Br>
+        <br>
+            <div class="center_button">
+              <input class="center" type="submit">
+            </div>
+          </form>
+        </div>
+        <div id = footer>
+          <p>Website by CJ Villafuerte</p>
+          <p>Assessment: MP07</p>
+      </div>
+      </div>
+      <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("Nav");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+  </body>
+</html>

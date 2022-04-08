@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cad6e57613.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <div class="header" id="top">
+        <div class="top_image_banner"></div>
+    </div>
+
+    <div id="navbar">
+        <nav class="navbar">
+            <div class="navigation_bar">
+                <a class="navigation-bar-item" href="index.html">
+                    <i class="fa-solid fa-house home"></i>
+                </a>
+                <a class="navigation-bar-item" href="frappuccino.html" target="_self">
+                    <i class="icons fa-solid fa-blender"></i>
+                    <span>Frappuccino</span>
+                </a>
+                <a class="navigation-bar-item" href="milktea.html" target="_self">
+                    <i class="icons fa-solid fa-whiskey-glass"></i>
+                    <span>Milktea</span>
+                </a>
+                <a class="navigation-bar-item" href="juice.html" target="_self" href=>
+                    <i class="icons fa-solid fa-martini-glass"></i>
+                    <span>Juice</span>
+                </a>
+                <a class="navigation-bar-item active-item" href="order.html" target="_self">
+                    <i class="icons fa-solid fa-cart-shopping"></i>
+                    <span>Order</span>
+                </a>
+                <a class="navigation-bar-item" href="about.html" target="_self">
+                    <i class="icons fa-solid fa-file-circle-check"></i>
+                    <span>About</span>
+                </a>
+                <a class="navigation-bar-item" href="ordersuccess.html" target="_blank">
+                    <i class="icons fa-solid fa-circle-question"></i>
+                    <span>Results</span>
+                </a>
+
+            </div>
+        </nav>
+    </div>
+
+    <!-- end of nav bar -->
+
+    <h1 id="bgOrder">Please Select Your Order</h1>
+    <form action="ordersuccess.html" class="order" target="#">
+
+        <div id="marg-bot">
+
+            <div class="container">
+                <label for="Full Name">name</label>
+                <input class="paddingOnTextOrder" type="text" name="fullName" id="fullName" placeholder="enter your full name.">
+
+                <label for="email">e-mail</label>
+                <input class="paddingOnTextOrder" type="email" name="email" id="email" placeholder="Enter your email.">
+
+                <label for="message">message</label>
+                <textarea class="paddingOnTextOrder" name="message" id="msg" placeholder="optional: Enter your message"></textarea>
+            </div>
+
+
+
+            <div id="order2">
+
+                <div id="inputFrame">
+                    <input type="radio" id="radio1" name="drink" value="frappuccino" required>
+                    <label for="radio1">Frappucino</label></br>
+                    <select name="sel1" id="sel1">
+                        <option value="none">select a drink</option>
+                        <option value="drink1">Strawberry & Caramel Creme Frappuccino®</option>
+                        <option value="drink2">Salted Caramel Mocha Frappuccino®</option>
+                        <option value="drink3">Chai Crème Frappuccino®</option>
+                    </select>
+                    </br>
+                </div>
+
+                <div id="inputFrame">
+                    <input type="radio" id="radio2" name="drink" value="milktea" required>
+                    <label for="radio2">Milktea</label></br>
+                    <select name="sel2" id="sel2">
+                        <option value="none">select a drink</option>
+                        <option value="drink4">Macao Black Pearl MilkTea</option>
+                        <option value="drink5">Chestnut Cream Uji Matcha</option>
+                        <option value="drink6">Cream Cheese Oreo Milk Tea</option>
+                    </select>
+                    </br>
+                </div>
+
+                <div id="inputFrame">
+                    <span class="margin1">
+                        <input type="radio" id="radio3" name="drink" value="juice" required>
+                        <label for="radio3">Juice</label></br>
+                    </span>
+                    <select name="sel3" id="sel3">
+                        <option value="none">select a drink</option>
+                        <option value="drink7">Old Orchard's Apple Cranberry Juice</option>
+                        <option value="drink8">Old Orchard's Orange Juice</option>
+                        <option value="drink9">Old Orchard's Apple Juice</option>
+                    </select>
+                    </br>
+                </div>
+
+                <div>
+                    <label for="qty">Quantity</label>
+                    <input type="number" name="qty" id="qty" id="qtyBorder" placeholder="0">
+                </div>
+            </div>
+
+            <input id="marg-top" class="form-submit-button" type="submit" value="submit">
+        </div>
+
+    </form>
+
+
+    <footer>
+        <p>
+            made by: Felise Jann S. Sanchez
+        </p>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/6c40df9b8d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./DrinkCSS.css">
+
+    <link rel="stylesheet" href="./FormCSS.css">
+
+    <link rel="stylesheet" href="./StickyNavCSS.css">
+
+</head>
+
+<body>
+
+
+    <img class="bg" src="https://i.redd.it/01sk42ne9rk61.jpg" />
+
+
+    <div class="menu">
+
+        <div class="NavContainer">
+            <div id="navbar">
+                <ul>
+                    <li><a href="Main.html"> Home</a></li>
+                    <li>
+                        <a href="Coffee.html"> <i class="fa-solid fa-mug-saucer"></i> Coffee</a>
+                    </li>
+                    <li>
+                        <a href="Tea.html"> <i class="fa-brands fa-bitbucket"></i> Tea</a>
+                    </li>
+                    <li>
+                        <a href="Shake.html"> <i class="fa-solid fa-blender"></i> Shake</a>
+                    </li>
+                    <li>
+                        <a class="active" href="Order.html"> <i class="fa-solid fa-cart-arrow-down"></i> Order</a>
+                    </li>
+                    <li>
+                        <a href="About Us.html"> <i class="fa-brands fa-angular"></i> About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="main">
+        <div id="top">
+            <h2 style="text-align: center;">Fill in your Contact Details for your Order</h2>
+        </div>
+
+        <form method="get" action="Results.html">
+            <div id="mid">
+
+
+
+                <label for="name">
+                        Name
+                    </label>
+
+                <input type="text" id="name" required />
+
+                <label for="email">
+                        Email
+                    </label>
+
+                <input type="email" id="email" required />
+
+
+
+                <label for="message">
+                        Message
+                    </label>
+
+                <input type="message" id="message" />
+
+
+
+
+                <p style="text-align: center;">Please select your drink category:</p>
+                <fieldset id="Group1" name="Group1">
+                    <legend>Drink Category</legend>
+                    <input id="coffee" name="Category" type="radio" value="coffee" />Coffee<br />
+                    <input id="tea" name="Category" type="radio" value="tea" />Tea<br />
+                    <input id="shake" name="Category" type="radio" value="shake" />Shake<br />
+                </fieldset><br/><br/>
+
+                <fieldset id="Group2" name="Group2">
+                    <legend>Drink</legend>
+                    <select id="Drink" name="Drink">
+                        <option value="Cappuccino">Cappuccino</option>
+                        <option value="Macchiato">Macchiato</option>
+                        <option value="Espresso">Espresso</option>
+                        <option value="GreenTea">Green Tea</option>
+                        <option value="LemonTea">Lemon Tea</option>
+                        <option value="GingerTea">Ginger Tea</option>
+                        <option value="MangoShake">Mango Shake</option>
+                        <option value="OreoCheesecake">Oreo Cheesecake</option>
+                        <option value="FourSeasons">Four Seasons Smoothie</option>
+                    
+                        </select></fieldset>
+
+
+
+
+
+                <br><br>
+                <label for="quantity">Number of Orders (Maximum 10 per Order)</label>
+                <input style="text-align: center;" type="number" id="Quantity" name="Quantity" min="1" max="10" required>
+
+
+
+                <br><br>
+
+                <input type="submit" value="Submit" id="btn">
+
+
+            </div>
+        </form>
+
+        <br><br>
+
+        <div class="container">
+            <div class="button">
+                <button><a href="Main.html"> Go Back</a></button>
+            </div>
+        </div>
+		
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>

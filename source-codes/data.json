@@ -1,0 +1,39 @@
+{
+  "members": {
+    "member1": [
+      { "name": "Jedd  Alean<br/>V.  Fernando" },
+      { "skills": ["memorization", "planning", "micro-managing"] },
+      { "interests": ["pets", "plants", "games"] },
+      { "shopDetails": ["shopLink", "shopPreviewImage"] }
+    ],
+    "member2": [
+      { "name": "Felise  Jann<br/>S.  Sanchez" },
+      { "skills": ["strategic", "creative thinking", "problem-solving"] },
+      {
+        "interests": [
+          "engineering",
+          "business & finance",
+          "graphic design & multi media arts"
+        ]
+      },
+      { "shopDetails": ["shopLink", "shopPreviewImage"] }
+    ],
+    "member3": [
+      { "name": "Francesca  Loui<br/>  Tengco" },
+      { "skills": ["design", "communication", "time management"] },
+      { "interests": ["sports", "fashion", "reading"] },
+      { "shopDetails": ["shopLink", "shopPreviewImage"] }
+    ],
+    "member4": [
+      { "name": "Christian  Joseph<br/>N.  Villafuerte" },
+      { "skills": ["Jquery", "Python", "C++"] },
+      { "interests": ["Hackathons", "Codecamps", "Machine learning"] },
+      {
+        "shopDetails": [
+          "machine-problems/VILLAFUERTE-MP07/home.html",
+          "shopPreviewImage"
+        ]
+      }
+    ]
+  }
+}

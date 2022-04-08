@@ -1,0 +1,132 @@
+
+body {
+    
+    align-items: center;
+    justify-content: center;
+  
+    font-family: sans-serif;
+    
+}
+
+
+  
+  
+ 
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form{
+    text-align: center;
+    margin: auto;
+}
+
+#btn{
+    
+    width: 100px;
+    margin-left: auto;
+     margin-right: auto;
+    
+}
+
+#main{
+    width: auto;
+    display:block;
+    
+}
+
+#top {
+    display: block;
+    padding: 5px 20px;
+    background: rgb(190, 190, 190);
+}
+
+#top p {
+    color: rgb(0, 0, 0);
+}
+
+#mid {
+    background: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+
+#fill {
+    color: darkslategray;
+    margin-top: -8px;
+}
+
+
+
+label {
+    line-height: 1.9rem;
+  }
+
+
+  fieldset {
+    padding: 20px 40px;
+  }
+
+  input,
+  textarea {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+}
+
+input[type="submit"] {
+    transform: translate(2.2%);
+    padding: 3px;
+    margin-top: 0.6rem;
+    font-family: cursive;
+    font-weight: bold;
+   }
+
+a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+}
+
+.container { 
+    height: 200px;
+    position: relative;
+    
+  }
+  
+
+.button{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+h1, a, p {
+
+  font-family: 'Segoe UI Light';
+  font-size: 12;
+  }
+  .center {
+      margin-left: auto;
+      margin-right: auto;
+  
+  }
+  
+  th, td {
+    border:1px solid black;
+    font-family: 'Segoe UI Light';
+    
+  }
+  
+  
+  th {
+      text-align: left;
+      font-weight:bolder;
+      font-family: 'Segoe UI Light';
+    
+  }
+  
+ 

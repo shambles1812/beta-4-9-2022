@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://kit.fontawesome.com/6c40df9b8d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../Drink Orders (Forms) MP06/AboutUsCSS.css">
+
+    <link rel="stylesheet" href="../Drink Orders (Forms) MP06/StickyNavCSS.css">
+
+    <link rel="stylesheet" href="../Drink Orders (Forms) MP06/DrinkCSS.css">
+
+</head>
+
+<body>
+
+
+    <img class="bg" src="https://i.redd.it/01sk42ne9rk61.jpg" />
+
+
+    <div class="menu">
+
+        <div class="NavContainer">
+            <div id="navbar">
+                <ul>
+                    <li><a href="Main.html"> Home</a></li>
+                    <li>
+                        <a href="Coffee.html"> <i class="fa-solid fa-mug-saucer"></i> Coffee</a>
+                    </li>
+                    <li>
+                        <a href="Tea.html"> <i class="fa-brands fa-bitbucket"></i> Tea</a>
+                    </li>
+                    <li>
+                        <a href="Shake.html"> <i class="fa-solid fa-blender"></i> Shake</a>
+                    </li>
+                    <li>
+                        <a href="Order.html"> <i class="fa-solid fa-cart-arrow-down"></i> Order</a>
+                    </li>
+                    <li>
+                        <a class="active" href="About Us.html"> <i class="fa-brands fa-angular"></i> About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div style="text-align:center">
+            <h2>About Us</h2>
+
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="https://i.pinimg.com/originals/b4/59/15/b45915483c8ff644513c4806856f5d50.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <h1 style="text-align: center; font-weight: bold; margin-top: 35%;">What We Do</h1>
+                <p style="text-align:center;">From our giving model to our company culture and maintaining quality of goods, we see our business as a vehicle to make an impact. </p> <br>
+                <p style="text-align:center;">Welcome to our store, your number one source for a wide variety of drinks. We're dedicated to giving you the very best of options, with a focus on taste, quality, and service.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<style type="text/css">
+		           
+		        h1          {font-family: cursive Apple Chancery ;
+                         font-style: italic;
+                         font-size: 60px;
+                         text-align: center;}
+
+            .img_bg     {background-image: url(header.jpg);
+                         height: 180px;}
+
+             body       {background-image:  url(order_bg.jpg);}
+
+             nav        {background-color: #e3b79c;
+                         height: 50px;
+                         word-spacing: 0;}
+
+            .navi       {display: inline;
+                         font-size: 28px;
+                         padding: 5px;}
+
+            .active 
+            .navi:hover {opacity: 0.5;;
+                         color: white;}
+
+            .menu       {margin: 290px;
+                         display: inline;} 
+
+            .h1_box     {position: absolute;
+                         left: 50%;
+                         top: 10%;
+                         transform: translate(-50%, -50%);
+                         border: 5px;
+                         padding: 10px;
+                         color: #974942;}
+
+            aside       {float: left;
+            	           margin-top: 20px;
+                         margin-left: 80px;}
+
+            .box        {margin-top: 80px;
+                         margin-left: 700px;} 
+
+            .d          {margin-left: 40px;}
+
+            .n          {margin-left: 40px;}
+            
+	</style>
+</head>
+        <header >
+        <div class="img_bg">
+            <div class="h1_box">
+              <h1> &#9729 Drinkable &#9729</h1>
+            </div>
+      </div> 
+    </header>
+    
+    <body style="color: #644840;">
+    <nav>
+      <center>
+      <ul class="menu">
+              <li class="navi"><a style="color: #efeae6;" href="Home.html"><i class="fa fa-bookmark-o"></i>Home</a></li>
+              <li class="navi"><a style="color: #efeae6;" href="about.html"><i class="fas fa-users"></i>About</a></li>
+              <li class="navi"><a style="color: #efeae6;" href="Coffee.html"><i class="fa fa-coffee"></i>Coffee</a></li>
+              <li class="navi"><a style="color: #efeae6;" href="Tea.html"><i class="fa fa-leaf"></i> Tea</a></li>
+              <li class="navi" ><a style="color: #efeae6;" href="Shake.html"> Shake</a></li>
+              <li class="navi"><a style="color: #efeae6;" href="order-t.html"><i class="fa fa-credit-card"></i>Order</a></li>
+         </ul>
+      </center>
+    </nav>
+
+    
+    <aside>	
+    <img class="logo"src="logo.png"> 
+    </aside>
+
+    <article>
+      <div class="box">
+    	<p><b>DRINK·A·BLE</b></p>
+      <p class="d">/ˈdriNGkəb(ə)l/</p>
+
+      <p class="n"><i>(n.) Aesthetically drinking </i></p>
+      <br>
+      <p class="desc">We invite you to slow down for earth to soul goodness. Self care for us is slowing down, taking a breather and being more conscious of your mental health. Drink what you desire with aesthetic here in Drinkable.   </p>
+      </div>
+    </article>
+
+    <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("menu");
+      var btns = header.getElementsByClassName("navi");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+      }
+    </script>
+
+</body>
+</html>

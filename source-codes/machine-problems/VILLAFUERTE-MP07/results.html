@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MP04-Villafuerte</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body >
+    <div id="image-banner">
+      <img src="images/header.jpg">
+  </div>
+  <div id = "Nav" >
+    <span>
+      <a href = "coffee.html">
+        Home
+      </a>
+      <i class="fa-solid fa-mug-hot"></i>
+      <a href = "coffee.html">
+        Coffee
+      </a>
+      |
+      <i class="fa-solid fa-mug-saucer"></i>
+      <a href = "tea.html">
+        Tea
+      </a>
+      |
+      <i class="fa-solid fa-beer-mug-empty"></i>
+      <a href = "shake.html">
+        Shake
+      </a>
+      |
+      <a href = "order.html">
+        Order
+      </a>
+      |
+      <a href = "about.html">
+        About
+      </a>
+    </span>
+  </div>
+    <div id = footer>
+      <p>Website by CJ Villafuerte</p>
+      <p>Assessment: MP07</p>
+  </div>
+  <script src="tab-backend.js"></script>
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("Nav");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+  </body>
+</html>

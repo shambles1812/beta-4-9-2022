@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Order Successful</title>
+</head>
+	<!-- navigation bar -->
+    <div class="header" id="top">
+        <div class="top_image_banner"></div>
+    </div>
+
+    <!-- end of nav bar -->
+
+<body id="success">
+    <h5 id="thankYou">
+        Thank you for ordering!
+    </h5>
+    <div class="receipt">
+        <h1>Your Receipt</h1>
+        <span>Name:</span>
+        <span id="name"></span>
+        <span>Email</span>
+        <span id="email"></span>
+        <span>Drink type:</span>
+        <span id="drinkType"></span>
+        <span>Drink:</span>
+        <span id="specificDrink"></span>
+        <span>Quantity:</span>
+        <span id="quantity"></span>
+        <span id="messageLabel">Message:</span>
+        <span id="message"></span>
+    </div>
+
+    <script>
+        const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+        });
+        let value = params;
+
+        document.getElementById('name').innerText = value.fullName
+        document.getElementById('email').innerText = value.email
+        document.getElementById('drinkType').innerText = value.drink
+        document.getElementById('message').innerHTML = value.message
+        document.getElementById('quantity').innerHTML = value.qty
+
+        var specificDrinkSpan = document.getElementById('specificDrink')
+        var specificDrink = ''
+        if (value.drink === 'frappuccino') {
+            specificDrink = value.sel1
+        } else if (value.drink === 'milktea') {
+            specificDrink = value.sel2
+        } else if (value.drink === 'juice') {
+            specificDrink = value.sel3
+        }
+        var drinkTitle = ''
+        switch(specificDrink) {
+            case 'drink1':
+                drinkTitle = 'Strawberry & Caramel Creme Frappuccino®'
+                break
+            case 'drink2':
+                drinkTitle = 'Salted Caramel Mocha Frappuccino®'
+                break
+            case 'drink3':
+                drinkTitle = 'Chai Crème Frappuccino®'
+                break
+            case 'drink4':
+                drinkTitle = 'Macao Black Pearl MilkTea'
+                break
+            case 'drink5':
+                drinkTitle = 'Chestnut Cream Uji Matcha'
+                break
+            case 'drink6':
+                drinkTitle = 'Cream Cheese Oreo Milk Tea'
+                break
+            case 'drink7':
+                drinkTitle = 'Old Orchard\'s Apple Cranberry Juice'
+                break
+            case 'drink8':
+                drinkTitle = 'Old Orchard\'s Orange Juice'
+                break
+            case 'drink9':
+                drinkTitle = 'Old Orchard\'s Apple Juice'
+                break
+            default:
+                drinkTitle = ''
+        }
+
+        specificDrinkSpan.innerText = drinkTitle
+    </script>
+</body>
+
+</html>

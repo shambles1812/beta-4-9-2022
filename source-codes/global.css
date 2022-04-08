@@ -1,0 +1,921 @@
+    /*  use these colors instead */
+    
+     :root {
+        --pastel-rose: #e9cfcf;
+        --off-white: #fef1d9;
+        --off-white-200: #A59E91;
+        --olive-green-50: #c9d1c8;
+        --olive-green-100: #94a591;
+        --olive-green-200: #586f54;
+        --warm-brown-100: #9d8d70;
+        --warm-brown-200: #796d56;
+        --warm-brown-900: #383329;
+        --text-default: #1f1f1f;
+    }
+    
+    .fontBold {
+        font-weight: bolder;
+    }
+    
+    .divHeader {
+        font-family: "Playfair Display";
+        /* display: grid;
+  grid-template-columns: 1fr 700px;
+  margin: 0px;
+  /* padding-left: 200px;  */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1.5fr 0.5fr;
+        /* grid-template-rows: 1.5fr 1fr 1fr; */
+        gap: 0px 0px;
+        justify-content: stretch;
+    }
+    
+    .headerText {
+        color: var(--warm-brown-200);
+        margin: 100px 0px 0px 200px;
+        font-size: 30px;
+        letter-spacing: -0.06em;
+    }
+    
+    h1 {
+        font-weight: normal;
+    }
+    
+    body {
+        font-family: "Playfair Display", serif;
+        background-image: url(../images/beigeGray.jpg);
+        margin: 0px;
+        overflow-x: hidden;
+    }
+    
+    .headerTop {
+        font-weight: bold;
+        color: var(--warm-brown-900);
+        font-style: italic;
+    }
+    
+    .leaves {
+        /*position: ; */
+        position: absolute;
+        width: auto;
+        height: 840px;
+        margin: 0%;
+        top: -80px;
+        right: 0px;
+        background-blend-mode: multiply;
+    }
+    
+    .coconut {
+        position: absolute;
+        width: 500px;
+        height: 400px;
+        left: 800px;
+        top: 400px;
+    }
+    
+    .drinksTitle {
+        /* position: absolute; */
+        align-content: right;
+        font-family: "Playfair Display";
+        font-size: 128px;
+        font-weight: thin !important;
+        line-height: 86.5%;
+        letter-spacing: -0.06em;
+        color: var(--olive-green-200);
+        margin-top: 100px;
+        padding-left: 200px;
+    }
+    
+    .divHeaderContainer {
+        margin-bottom: 100px;
+    }
+    /* NAVIGATION BAR */
+    
+    .navbar>ul {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        gap: 30px;
+        margin-bottom: 200px;
+        font-weight: normal;
+        flex-direction: row;
+    }
+    
+    .navbar {
+        font-family: "Montserrat", sans-serif !important;
+        font-weight: normal;
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+        backdrop-filter: blur(6px);
+    }
+    
+    .navbar::before {
+        content: "";
+        position: absolute;
+        z-index: -10;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #a08c74;
+        opacity: 40%;
+    }
+    
+    .navbar li {
+        z-index: 100 !important;
+        font-family: "Montserrat", sans-serif !important;
+        font-weight: thin;
+    }
+    
+    .navbar li a {
+        color: white !important;
+    }
+    
+    .navBarContent {
+        z-index: 9999;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        color: white !important;
+        justify-content: space-between;
+        list-style-type: none;
+        gap: 30px;
+        /* padding: 0% 500px; */
+    }
+    .navbar-toggler-icon {
+        border: 2px solid black;
+        border-radius: 2px;
+    }
+    /* Dropdown text color */
+    
+    .dropdown-menu .dropdown-item {
+        font-weight: bold;
+        color: black !important;
+    }
+    
+    .dropdown-menu .dropdown-item:hover {
+        background-color: var(--olive-green-100);
+    }
+    
+    .container a {
+        color: white;
+    }
+    /* Start of Main page card drinks css */
+    /* End of Main page card drinks css */
+    /* Start of Main page card code css */
+    
+    .cardCodeContainer {
+        background-image: url(../images/beigeDarkGray.jpg);
+        height: 1400px;
+    }
+    
+    .cardCodeContainer h1 {
+        font-family: "Playfair Display";
+        font-size: 60px;
+        line-height: 103.5%;
+        letter-spacing: -0.06em;
+        color: #f7f7f7;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .cardCodeContainerTitle {
+        font-style: italic;
+        font-weight: 700;
+        font-size: 96px;
+        color: #fddbf6;
+    }
+    
+    #cardCodeContainerText {
+        padding-top: 200px;
+    }
+    
+    .cardCodeContainer p {
+        color: var(--warm-brown-900);
+        font-size: 30px;
+        text-decoration: none;
+        text-align: left;
+    }
+    
+    .cardCodeContainer {
+        height: 2000px;
+    }
+    
+    .cardCodeContainer a {
+        color: inherit;
+    }
+    
+    a:link {
+        text-decoration: none;
+    }
+    
+    a:visited {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    a:active {
+        text-decoration: none;
+    }
+    
+    .cardCodeCarousel {
+        /* height: 600px;
+        border: 5px solid violet;
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-between; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-size: 2em;
+        position: relative;
+        width: 100%;
+        height: 1200px;
+    }
+    
+    .cardCodeCarousel .cardCodeHolder {
+        flex: 0 0 30%;
+        gap: 60px;
+        height: 800px;
+        width: 200px;
+        position: relative;
+        z-index: 1;
+        -webkit-transform: scale(0.6) translateY(-2rem);
+        transform: scale(0.6) translateY(-2rem);
+        opacity: 100;
+        cursor: pointer;
+        pointer-events: none;
+        background-color: var(--olive-green-100);
+        transition: 1s;
+        box-shadow: 8px 6px 26px -4px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 8px 6px 26px -4px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 8px 6px 26px -4px rgba(0, 0, 0, 0.75);
+    }
+    
+    .cardCodeCarousel .cardCodeHolder:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        border-radius: 100%;
+        /* background-color: rgba(0, 0, 0, 0.3); */
+        bottom: -5rem;
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+    }
+    
+    .cardCodeHolder img {
+        height: 100%;
+    }
+    
+    .cardCodeHolder:nth-child(1),
+    .cardCodeHolder:nth-child(2),
+    .cardCodeHolder:nth-child(6),
+    .cardCodeHolder:nth-child(7) {
+        flex: 0 0 0%;
+        opacity: 0;
+    }
+    
+    .cardCodeHolderHolderTextImage {
+        color: white;
+        z-index: 30;
+        background-color: none !important;
+        transform: translate(50px, -700px);
+        opacity: 100%;
+        text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.99);
+    }
+    
+    .cardCodeHolderTextImage:active {
+        opacity: 100%;
+    }
+    
+    .cardCodeHolderTextImage:after {
+        z-index: 30;
+        background-color: none !important;
+        transform: translate(0, 10px);
+        opacity: 100%;
+    }
+    
+    .cardCode .cardCodeHolder.active {
+        z-index: 3;
+        -webkit-transform: scale(1) translateY(0) translateX(0);
+        transform: scale(1) translateY(3) translateX(1);
+        opacity: 1;
+        pointer-events: auto;
+        transition: 1s;
+    }
+    
+    .cardCode .cardCodeHolder.prev,
+    .cardCode .cardCodeHolder.next {
+        z-index: 2;
+        -webkit-transform: scale(0.8) translateY(0) translateX(0);
+        transform: scale(0.8) translateY(0) translateX(0);
+        opacity: 0.6;
+        pointer-events: auto;
+        transition: 1s;
+    }
+    /* (4th container) Start of Main page shop card css */
+    
+    .shopCardContainer {
+        background-image: url(../images/bgMossGreen.jpg);
+        /* border: 5px solid violet; */
+    }
+    
+    .shopCards {
+        /* border: 5px solid violet; */
+    }
+    /* (4th container) End of Main page shop card css */
+    
+    .shopCardContainer {
+        padding-top: 100px;
+    }
+    
+    .shopCardHeaderText h1 {
+        font-family: "Playfair Display";
+        font-style: italic;
+        font-weight: 700;
+        font-size: 120px;
+        text-align: center;
+        letter-spacing: -0.06em;
+        color: white;
+    }
+    
+    .shopCardHeaderText h2 {
+        text-align: center;
+        color: var(--off-white);
+        font-size: 70px;
+        letter-spacing: -0.06em;
+        line-height: 103.5%;
+    }
+    
+    .shopCardHeader p {
+        text-align: center;
+        color: var(--off-white);
+        font-size: 20px;
+        margin-top: 30px;
+        letter-spacing: -0.06em;
+    }
+    /* EXPERIMENTS */
+    
+    .cardDrinkContainer {
+        /* border: 5px solid violet; */
+        height: 1400px;
+        /* temporary */
+    }
+    
+    .cardDrinkContainerText {
+        text-align: center;
+        font-size: 50px;
+        letter-spacing: -0.06em;
+        color: var(--olive-green-200);
+        line-height: 86.5%;
+    }
+    
+    .cardDrinkContainerText p {
+        margin-top: 200px;
+    }
+    
+    .cardDrinkOuter {
+        /* border: 5px solid violet; */
+        height: auto;
+    }
+    
+    .cardDrink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        font-size: 2em;
+        position: relative;
+        width: 100%;
+        height: 1200px;
+    }
+    
+    .cardDrink .cardDrinkHolder {
+        flex: 0 0 30%;
+        gap: 60px;
+        height: 800px;
+        width: 200px;
+        position: relative;
+        z-index: 1;
+        -webkit-transform: scale(0.6) translateY(-2rem);
+        transform: scale(0.6) translateY(-2rem);
+        opacity: 0;
+        cursor: pointer;
+        pointer-events: none;
+        /* background-color: var(--olive-green-100); */
+        transition: 1s;
+        box-shadow: 8px 6px 26px -4px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 8px 6px 26px -4px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 8px 6px 26px -4px rgba(0, 0, 0, 0.75);
+    }
+    
+    .cardDrink .cardDrinkHolder:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        border-radius: 100%;
+        /* background-color: rgba(0, 0, 0, 0.3); */
+        bottom: -5rem;
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+    }
+    
+    .cardDrinkHolder img {
+        height: 100%;
+    }
+    /* .cardDrinkHolder p {
+        z-index: 30;
+        background-color: none !important;
+        transform: translate(0, 10px);
+        opacity: 0%;
+    } */
+    
+    .cardDrinkHolderTextImage {
+        color: white;
+        z-index: 30;
+        background-color: none !important;
+        transform: translate(50px, -700px);
+        opacity: 100%;
+        text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.99);
+    }
+    
+    .cardDrinkHolderTextImage:active {
+        opacity: 100%;
+    }
+    
+    .cardDrinkHolderTextImage:after {
+        z-index: 30;
+        background-color: none !important;
+        transform: translate(0, 10px);
+        opacity: 100%;
+    }
+    
+    .cardDrink .cardDrinkHolder.active {
+        z-index: 3;
+        -webkit-transform: scale(1) translateY(0) translateX(0);
+        transform: scale(1) translateY(3) translateX(1);
+        opacity: 1;
+        pointer-events: auto;
+        transition: 1s;
+    }
+    
+    .cardDrink .cardDrinkHolder.prev,
+    .cardDrink .cardDrinkHolder.next {
+        z-index: 2;
+        -webkit-transform: scale(0.8) translateY(0) translateX(0);
+        transform: scale(0.8) translateY(0) translateX(0);
+        opacity: 0.6;
+        pointer-events: auto;
+        transition: 1s;
+    }
+    
+    .shopCardHeaderHR {
+        height: 2px;
+        color: var(--off-white);
+        opacity: 100%;
+        margin: 50px 0;
+    }
+    
+    .shopCardHolder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0;
+    }
+    
+    .shopCardHolder img {
+        z-index: 100;
+    }
+    
+    .shopCardHolderContent {
+        position: relative;
+    }
+    
+    .shopCardHolderContent img {
+        position: relative;
+        z-index: 7;
+    }
+    
+    .shopCardHolderTextLeft {
+        /* placement */
+        position: absolute;
+        left: -100px;
+        bottom: -80px;
+        transform-origin: 0 0;
+        transform: rotate(-90deg);
+        color: var(--off-white);
+        letter-spacing: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        font-size: 30px;
+    }
+    
+    .shopCardHolderTextRight {
+        position: absolute;
+        top: 20%;
+        left: 550px;
+        width: 500px;
+        display: flex;
+        font-weight: bold;
+        flex-direction: column;
+        color: white;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
+        font-size: 50px;
+        z-index: 9;
+    }
+    
+    .shopCardHolderTextRight hr {
+        height: 2px;
+        width: 200px;
+        box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
+    }
+    
+    .shopCardHolderSubText {
+        color: var(--pastel-rose);
+        font-style: italic;
+        font-size: 20px;
+    }
+    
+    .shopCardImageGradientOverlay {
+        position: absolute;
+        content: '';
+        z-index: 8;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 82%, rgba(0, 0, 0, 0.3533788515406162) 100%);
+        border-radius: 9999px;
+    }
+    
+    .shopCardImageBackground {
+        position: absolute;
+        content: '';
+        z-index: 5;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 9999px;
+    }
+    
+    .jeddGradient {
+        background: linear-gradient(#f12711, #f5af19);
+    }
+    
+    .lizGradient {
+        background: linear-gradient(#ee9ca7, #ffdde1);
+    }
+    
+    .francescaGradient {
+        background: linear-gradient(#FC5C7D, #6A82FB);
+    }
+    
+    .christianGradient {
+        background: linear-gradient(#2c3e50, #3498db);
+    }
+    /* Use when current nav item is opened / ACTIVE */
+    
+    .currentNavItem {
+        color: var(--off-white);
+        padding: 0px 10px;
+        font-weight: 700;
+        border-bottom: 1px solid var(--off-white);
+        padding-bottom: 5px
+        /* Kayo na bahala sa color */
+    }
+    
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .codePreviewContainer {
+        background-image: url(../images/beigeDarkGray.jpg);
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .flipCardContainer {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1400px;
+        height: 1000px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        flex-wrap: wrap;
+        background-color: var(--off-white-200);
+        box-shadow: 21px 20px 0px 3px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 21px 20px 0px 3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 21px 20px 0px 3px rgba(0, 0, 0, 0.75);
+    }
+    
+    .codePreviewHeader {
+        margin: 200px 0px;
+        height: 300px;
+    }
+    
+    .codePreviewHeader h1 {
+        font-family: 'Playfair Display';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 103.5%;
+        letter-spacing: -0.06em;
+        color: var(--olive-green-200);
+        position: absolute;
+        left: 350px;
+        /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    }
+    
+    .codePreviewHeader p {
+        position: absolute;
+        width: 557px;
+        height: 389px;
+        left: 350px;
+        top: 390px;
+        font-family: 'Playfair Display';
+        font-size: 40px;
+        line-height: 103.5%;
+        letter-spacing: -0.06em;
+        color: var(--warm-brown-100);
+    }
+    
+    .beigeLine {
+        position: absolute;
+        background-color: var(--warm-brown-100);
+        width: 18px;
+        height: 280px;
+        margin-left: 100px;
+        margin-right: 100px;
+        left: 150px;
+        top: 250px;
+    }
+    
+    .codePreviewHeader img {
+        position: absolute;
+        width: 880px;
+        height: 420px;
+        left: 1000px;
+        top: 230px;
+        background: url(coconut-png-24812.png);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        transform: scaleX(-1);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .codePreviewContainer h1 {
+        position: absolute;
+        width: 433px;
+        height: 358px;
+        left: 167px;
+        top: 896px;
+        font-family: 'Playfair Display';
+        font-size: 128px;
+        line-height: 86.5%;
+        letter-spacing: -0.06em;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+    }
+    
+    .codePreviewContainer h2 {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-size: 64px;
+        line-height: 86.5%;
+        text-align: center;
+        letter-spacing: -0.06em;
+        color: var(--off-white);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .codeCardContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 100px;
+    }
+    
+    .codeFlashCard {
+        background-color: var(--off-white-200);
+        color: #6f6762;
+        align-items: center;
+        height: 100px;
+        display: inline-block;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+    
+    .codeFlashCard:hover {
+        color: var(--warm-brown-900);
+        box-shadow: -1px 0px 7px 3px rgba(83, 77, 73, 0.75);
+        -webkit-box-shadow: -1px 0px 7px 3px rgba(83, 77, 73, 0.75);
+        -moz-box-shadow: -1px 0px 7px 3px rgba(83, 77, 73, 0.75);
+    }
+    
+    .codeFlashCard:active {
+        background-color: var(--olive-green-200);
+        color: var(--off-white);
+    }
+    
+    .codeFlashCard::after {
+        background-color: var(--olive-green-200);
+        color: var(--off-white);
+    }
+    
+    .headerContainer {
+        text-align: center;
+        font-family: 'Playfair Display';
+        letter-spacing: -0.06em;
+    }
+    
+    .headerContainer h1 {
+        color: var(--olive-green-200);
+        margin-top: 150px;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 128px;
+        line-height: 103.5%;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .headerContainer p {
+        font-style: normal;
+        font-size: 64px;
+        line-height: 103.5%;
+        /* or 66px */
+        text-align: center;
+        color: var(--warm-brown-100);
+        margin-bottom: 300px;
+    }
+    
+    .profileContainer {
+        margin: auto;
+        width: 1500px;
+        height: 1600px;
+        background-image: url(../images/bgMossGreen.jpg);
+    }
+    
+    .iconContainer {
+        border-radius: 9999px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    
+    .iconContainer img {
+        background-color: var(--olive-green-200);
+    }
+    
+    .iconMember {
+        height: 230px;
+        width: 230px;
+        transform: translate(0, -125px);
+        filter: grayscale(100%);
+        /* border: 20px solid var(--off-white-200); */
+        border-radius: 50%;
+        /*negative number para umangat sa 2nd param*/
+    }
+    
+    .iconMember:hover {
+        filter: grayscale(0%);
+    }
+    /* .iconMember:active {
+        height: 380px;
+        border: 30px solid var(--warm-brown-900);
+        width: 380px;
+        filter: grayscale(0%);
+        border-radius: 9999px;
+        transform: translate(0, -180px)
+    } */
+    
+    .memberName {
+        color: var(--off-white);
+        text-align: center;
+        font-family: 'Playfair Display';
+        font-style: italic;
+        font-size: 128px;
+        line-height: 97%;
+        text-align: center;
+        letter-spacing: -0.03em;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: 50px;
+        transform: translate(0, -50px);
+    }
+    
+    .skillsInterestContainer {
+        display: flex;
+        align-content: center;
+        /* border: 1px solid aqua; */
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        gap: 50px;
+        color: var(--off-white);
+    }
+    
+    .skillsInterestContainer h2 {
+        text-align: right;
+        font-style: italic;
+        margin-bottom: 50px;
+    }
+    
+    .skillsContainer {
+        background-color: var(--warm-brown-900);
+        /* border: 1px solid red; */
+        width: 33%;
+        padding: 20px;
+        height: 300px;
+    }
+    
+    .interestContainer {
+        background-color: var(--warm-brown-900);
+        /* border: 1px solid blue; */
+        width: 33%;
+        height: 300px;
+        padding: 20px;
+    }
+    
+    .skillsContainer p,
+    .interestContainer p {
+        color: var(--olive-green-100);
+        font-weight: lighter;
+        font-style: normal;
+    }
+    
+    .shopPreview {
+        margin-top: 50px;
+    }
+    
+    .shopPreview h2 {
+        display: flex;
+        padding: 20px;
+        margin: auto;
+        background-color: var(--warm-brown-900);
+        /* border: 1px solid yellow; */
+        height: 500px;
+        width: 69%;
+        color: var(--off-white);
+        justify-content: center;
+        font-style: italic;
+    }
+    /* lower carousel button */
+    
+    .carouselButtons {
+        margin: auto;
+        width: 25%;
+        display: flex;
+    }
+    
+    .carouselButtons span {
+        text-align: center;
+        font-size: 50px;
+        width: 50%;
+    }
+    .cardGrid {
+        height:1000px;
+        width:1400px;
+        margin:auto;
+    }
+    #codePrompt {
+        margin-top:250px;
+    }
+    .flipCardContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float:left;
+    }
+    
+    .liveCodeContainer {
+        height: 75%;
+        width: 75%;
+        background-color: var(--off-white-200);
+    }
+    .front  {position: relative;}
+.back       {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.sourceCodeArea {
+    margin:auto;
+    width:75%;
+    height:75%
+}

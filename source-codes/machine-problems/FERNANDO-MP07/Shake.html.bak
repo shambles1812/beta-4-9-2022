@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+<head>
+
+    <script src="https://kit.fontawesome.com/6c40df9b8d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../Drink Orders (Forms) MP06/DrinkCSS.css">
+
+    <link rel="stylesheet" href="../Drink Orders (Forms) MP06/StickyNavCSS.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <img class="bg" src="https://i.redd.it/01sk42ne9rk61.jpg" />
+
+
+    <div class="menu">
+
+        <div class="NavContainer">
+            <div id="navbar">
+                <ul>
+                    <li><a href="Main.html"> Home</a></li>
+                    <li>
+                        <a href="Coffee.html"> <i class="fa-solid fa-mug-saucer"></i> Coffee</a>
+                    </li>
+                    <li>
+                        <a href="Tea.html"> <i class="fa-brands fa-bitbucket"></i> Tea</a>
+                    </li>
+                    <li>
+                        <a class="active" href="Shake.html"> <i class="fa-solid fa-blender"></i> Shake</a>
+                    </li>
+                    <li>
+                        <a href="Order.html"> <i class="fa-solid fa-cart-arrow-down"></i> Order</a>
+                    </li>
+                    <li>
+                        <a href="About Us.html"> <i class="fa-brands fa-angular"></i> About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 style="text-align: center; color: rgb(139, 56, 77);">SHAKE </h1>
+    <p style="text-align: center;">It is a sweet drink made by blending milk, ice cream, and flavorings or sweeteners such as butterscotch, caramel sauce, chocolate syrup, fruit syrup, or whole fruit into a thick, sweet, cold mixture.</p>
+    <br><br>
+
+    <div class="div-container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#shake1">Mango Shake</a></li>
+            <li><a data-toggle="tab" href="#shake2">Oreo Cheesecake</a></li>
+            <li><a data-toggle="tab" href="#shake3">Four Seasons</a></li>
+        </ul>
+    </div>
+
+    <div class="tab-content">
+        <div id="shake1" class="tab-pane fade in active">
+            <h1 style="text-align: center; color: rgb(206, 188, 26);"> MANGO SHAKE</h1>
+            <div class="DivShake">
+
+                <img src="https://veggiedesserts.com/wp-content/uploads/2021/03/mango-shake-5sq-500x500.jpg" alt="Mango Shake" width="486px" height="385px" opacity="0.7">
+
+            </div>
+            <br>
+            <p style="text-align: center;"><span style="color: rgb(206, 188, 26);">Mango Shake</span> is a cold drink that is simply prepared by blending ripe mango and sugar. Flavour can be increased by adding milk to have a thicker viscosity.</p>
+        </div>
+        <div id="shake2" class="tab-pane fade">
+            <h1 style="text-align: center; color: rgb(51, 51, 51);"> OREO CHEESECAKE</h1>
+            <div class="DivShake">
+
+                <img src="https://recipesfromapantry.com/wp-content/uploads/2021/06/Oreo-Milkshake-DSCF2712-500x500.jpg" alt="Oreo Cheesecake" width="486px" height="385px" opacity="0.7">
+
+            </div>
+            <br>
+            <p style="text-align: center;"><span style="color: rgb(51, 51, 51);">The Oreo Cheesecake</span> is a thick, creamy cold drink that contains ice cream, cream cheese, whipped cream, topped with graham crackers and oreo cookies.</p>
+        </div>
+        <div id="shake3" class="tab-pane fade">
+            <h1 style="text-align: center; color: rgb(139, 56, 77);"> FOUR SEASONS SMOOTHIE</h1>
+            <div class="DivShake">
+
+                <img src="https://wallpapers.com/images/high/smoothie-four-season-flavor-26fbyqvfp6gli98e.jpg" alt="Four Seasons" width="486px" height="385px" opacity="0.7">
+
+            </div>
+            <br>
+            <p style="text-align: center;"><span style="color: rgb(139, 56, 77);"> FOUR SEASONS</span> smoothie is often composed with the combination of Berries, Mango, Banana, and Orange flavours. Blended together and it will result into a blast of fruity flavours. </p>
+        </div>
+
+    </div>
+
+   
+</body>
+
+</html>

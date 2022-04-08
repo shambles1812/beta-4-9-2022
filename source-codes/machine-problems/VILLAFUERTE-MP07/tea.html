@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MP07-Villafuerte</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bc5d732e0a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/bc5d732e0a.js" crossorigin="anonymous"></script>
+  </head>
+  <body >
+    <div id="image-banner">
+      <img src="images/header.jpg">
+  </div>
+  <div id = "Nav" >
+    <span>
+      <a href = "coffee.html">
+        Home
+      </a>
+      <i class="fa-solid fa-mug-hot"></i>
+      <a href = "coffee.html">
+        Coffee
+      </a>
+      |
+      <i class="fa-solid fa-mug-saucer"></i>
+      <a href = "tea.html">
+        Tea
+      </a>
+      |
+      <i class="fa-solid fa-beer-mug-empty"></i>
+      <a href = "shake.html">
+        Shake
+      </a>
+      |
+      <a href = "order.html">
+        Order
+      </a>
+      |
+      <a href = "about.html">
+        About
+      </a>
+    </span>
+  </div>
+    <div >
+      <h1 class= "description">
+        an aromatic beverage prepared by pouring hot or boiling water over cured or fresh leaves of Camellia sinensis
+      </h1>
+    </div>
+      <div class = "category-container" >
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              Earl Grey Tea</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">London Fog Tea Latte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Royal English Breakfast Tea Latte</a>
+          </li>
+    
+        </ul>
+        <table class="category-table">
+        
+          <tr class="drinks-row">
+            <td colspan="1" id="drink-0" >
+              <span>
+                Earl Grey Tea
+              </span>
+              <img src ="images/tea/black-teas/earl-gray-tea.jpg" alt="hot-black-tea">
+              <p>We take a strong black tea base and add the essence of bergamot, a citrus fruit with subtle lemon and floral lavender notes, to create this aromatically awesome tea flavor.</p>
+            </td>
+            <td colspan="1" class="hidden" id="drink-1">
+              <span>
+                London Fog Tea Latte
+              </span>
+              <img src ="images/tea/black-teas/london-fog-tea-latte.jpg" alt="hot-black-tea">
+              <p>Bright, citrusy spark of Italian bergamot blends with subtle hints of lavender, vanilla syrup, and steamed milk for this frothy reinvention of classic Earl Grey tea.</p>
+            </td>
+            <td colspan="1" class="hidden" id="drink-2">
+              <span>
+                Royal English Breakfast Tea Latte
+              </span>
+              <img src ="images/tea/black-teas/royal-english-tea-latte.jpg" alt="hot-black-tea">
+              <p>A select blend of rich, full-leaf black teas from India and Sri Lanka sweetened with liquid cane sugar and topped with steamed milk and a velvety foam. Each and every sip—smooth and silky.</p>
+            </td>
+          </td>
+          </tr>
+        </table>
+      </div>
+      
+      <div id = footer>
+        <p>Website by CJ Villafuerte</p>
+        <p>Assessment: MP07</p>
+    </div>
+    <script src="tab-backend.js"></script>
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("Nav");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
+      
+  </body>
+</html>

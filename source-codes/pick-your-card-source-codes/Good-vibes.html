@@ -1,0 +1,158 @@
+<style>
+
+    #thisH1 {
+        display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    }
+    .thisContainer {
+        background-color: #A9D7E9;
+        height: 620px;
+    }
+    
+    .header {
+        background-color: black;
+        height: 40px;
+    }
+    
+    .box {
+        justify-content: center;
+        height: 930px;
+        width: 700px;
+    }
+    
+    #thisForm {
+        background-color: #F3F3F3;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #thisH4 {
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+    .name {
+        padding-left: 250px;
+    }
+    
+    .email {
+        padding-left: 250px;
+    }
+    
+    .scale {
+        padding-left: 40px;
+    }
+    
+    .place {
+        padding-left: 138px;
+    }
+    
+    .time {
+        padding-left: 20px;
+    }
+    
+    .emotion {
+        padding-left: 50px;
+    }
+    
+    .select {
+        padding-left: 138px;
+    }
+    
+    .experience {
+        padding-left: 5px;
+    }
+    
+    #afternoon,
+    #evening {
+        margin-left: 297px;
+    }
+    
+    #elated,
+    #loved,
+    #Enthusiastic {
+        margin-left: 295px;
+    }
+    
+    #name,
+    #scale,
+    #email,
+    #place,
+    #exp {
+        width: 270px;
+        border-radius: 4px;
+        border-color: #dedede;
+    }
+    
+    #exp {
+        padding-bottom: 30px;
+    }
+</style>
+
+<div class="header"></div>
+<div class="thisContainer" style="display: flex; align-items: left; justify-content: center;">
+
+    <div class="box">
+        <h1 id = "thisH1" style="text-align: center;">Good Vibes Form</h1>
+        <form id ="thisForm">
+            <h4 id="thisH4">Tell us something positive that happened to you today</h4><br>
+
+            <label class="name" for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label class="email" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
+
+            <label class="scale" for="scale">On scale of 1-10, how good was it?</label>
+            <input type="number" id="scale" name="scale" min="1" max="10" placeholder="Enter a number between 1 and 10" required><br><br>
+
+            <label class="place" for="place"> Where did it happen?</label>
+            <select name="place" id="place" required>
+                            <option>At home</option>
+                            <option>At park</option>
+                            <option>At school</option>
+                            <option>At work</option>
+                        </select><br><br>
+
+            <label class="time" for="time">At what time of the day did it happen?</label>
+            <input type="radio" id="morning" name="morning" value="morning">
+            <label for="morning">Morning</label><br>
+
+            <input type="radio" id="afternoon" name="afternoon" value="afternoon">
+            <label for="afternoon">Afternoon</label><br>
+
+            <input type="radio" id="evening" name="evening" value="evening">
+            <label for="evening">Evening</label><br><br>
+
+
+            <label class="emotion" for="emotion">What emotion did you experince?</label>
+            <input type="checkbox" id="excited" name="excited" value="excited">
+            <label for="excited">Excited</label><br>
+
+            <label class="select" for="select">(Select all that apply)</label>
+            <input type="checkbox" id="humbled" name="humbled" value="humbled">
+            <label for="humbled">Humbled</label><br>
+
+            <input type="checkbox" id="elated" name="elated" value="elated">
+            <label for="elated">Elated</label><br>
+
+            <input type="checkbox" id="loved" name="loved" value="loved">
+            <label for="loved">Loved</label><br>
+
+            <input type="checkbox" id="Enthusiastic" name="Enthusiastic" value="Enthusiastic">
+            <label for="Enthusiastic">Enthusiastic</label><br><br>
+
+            <label class="experience" for="experience">Please describe your positive experience</label>
+            <input type="text" id="exp" name="exp" placeholder="Enter your experience here..."><br><br>
+
+            <center>
+                <input type="submit" style="background-color: #6BA2CE; color: white; border-style: none; padding: 10px;"><br><br>
+            </center>
+        </form>
+    </div>
+
+</div>

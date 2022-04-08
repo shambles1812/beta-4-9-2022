@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI Light';
+    font-size: 12;
+    margin: 0px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1-coffee {
+    text-align: center;
+}
+
+h1-coffee {
+    text-align: center;
+}
+
+html {
+    background-color: rgb(231, 231, 231);
+}
+
+.bg {
+    width: 100%;
+    height: 80vh;
+    repeat: 50% 50%;
+    background-image: url(https://i.redd.it/01sk42ne9rk61.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.DivImage {
+    width: 100%;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+.DivCoffee {
+    border: 7px outset rgb(146, 112, 19);
+    max-width: 500px;
+    max-height: 400px;
+    margin: auto;
+    display: block;
+}
+
+.DivCoffeeMain {
+    border: 7px outset rgb(146, 112, 19);
+    max-width: 500px;
+    max-height: 400px;
+    margin: 30px auto;
+    display: inline-block;
+}
+
+.DivTea {
+    border: 7px outset rgb(25, 90, 5);
+    max-width: 500px;
+    max-height: 400px;
+    margin: auto;
+    display: block;
+}
+
+.DivTeaMain {
+    border: 7px outset rgb(25, 90, 5);
+    max-width: 500px;
+    max-height: 400px;
+    margin: 30px auto;
+    display: block;
+}
+
+.DivShake {
+    border: 7px outset rgb(21, 2, 75);
+    max-width: 500px;
+    max-height: 400px;
+    margin: auto;
+    display: block;
+}
+
+.DivShakeMain {
+    border: 7px outset rgb(21, 2, 75);
+    max-width: 500px;
+    max-height: 400px;
+    margin: 30px auto;
+    display: block;
+}
+
+.DrinkTitle {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    text-align: left;
+    font-weight: bolder;
+    background-color: rgb(241, 235, 227);
+}
+
+.DrinkContainer {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background-color: rgb(241, 235, 227);
+}
