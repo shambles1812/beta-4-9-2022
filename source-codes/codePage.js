@@ -4,7 +4,12 @@ var to_view_on_load;
 
 $.urlParam = function(name){
 	var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-	return results[1] || 0;
+	if(results == null){
+        return "none"
+    }
+    else{
+        return results[1];
+    }
 }
 
 $( document ).ready(function() {
@@ -16,8 +21,8 @@ $( document ).ready(function() {
             $("#"+to_view_on_load).click();
         }
         console.log("dataretrieved")
-    })
-    
+    });
+    $(".codePreviewContainerText").css("zIndex","10");
 });
 $(".codeFlashCard").click(function() {
     var code_name = $(this).find("p").attr("value");
