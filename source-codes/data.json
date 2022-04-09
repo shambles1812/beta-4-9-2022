@@ -4,7 +4,12 @@
       { "name": "Jedd  Alean<br/>V.  Fernando" },
       { "skills": ["memorization", "planning", "micro-managing"] },
       { "interests": ["pets", "plants", "games"] },
-      { "shopDetails": ["shopLink", "shopPreviewImage"] }
+      {
+        "shopDetails": [
+          "machine-problems/FERNANDO-MP07/Main.html",
+          "../images/jedd-store.png"
+        ]
+      }
     ],
     "member2": [
       { "name": "Felise  Jann<br/>S.  Sanchez" },
@@ -16,13 +21,23 @@
           "graphic design & multi media arts"
         ]
       },
-      { "shopDetails": ["shopLink", "shopPreviewImage"] }
+      {
+        "shopDetails": [
+          "machine-problems/SANCHEZ-MP07",
+          "../images/liz-store.png"
+        ]
+      }
     ],
     "member3": [
       { "name": "Francesca  Loui<br/>  Tengco" },
       { "skills": ["design", "communication", "time management"] },
       { "interests": ["sports", "fashion", "reading"] },
-      { "shopDetails": ["shopLink", "shopPreviewImage"] }
+      {
+        "shopDetails": [
+          "machine-problems/TENGCO-MP07/Home.html",
+          "../images/cesca-store.png"
+        ]
+      }
     ],
     "member4": [
       { "name": "Christian  Joseph<br/>N.  Villafuerte" },
@@ -31,7 +46,7 @@
       {
         "shopDetails": [
           "machine-problems/VILLAFUERTE-MP07/home.html",
-          "shopPreviewImage"
+          "../images/cj-store.png"
         ]
       }
     ]
