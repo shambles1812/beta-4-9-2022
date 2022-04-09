@@ -260,23 +260,61 @@
 
             <div class="cardCodeCarousel">
                 <!-- start of 1 -->
-                <div class="cardCodeHolder" value="billing">Need code preview here 1</div>
+                <div class="cardCodeHolder" value="billing"><span>
+                    <img src="images/codePreview1.jpg" alt="test image billing">
+                    <p class="cardDrinkHolderTextImage">
+                        if you close your eyes <br/>
+                        you cannot see.
+                    </p>
+                </span></div>
                 <!-- start of 2 -->
-                <div class="cardCodeHolder" value="card">Need code preview here 2</div>
+                <div class="cardCodeHolder" value="card"><span>
+                    <img src="images/codePreview2.jpg" alt="test image 1 billing">
+                    <p class="cardDrinkHolderTextImage">
+                        if you close your eyes <br/>
+                        you cannot see.
+                    </p>
+                </span></div>
                 <!-- start of 3 -->
-                <div class="cardCodeHolder" value="forms3">Need code preview here 3</div>
+                <div class="cardCodeHolder" value="forms3"<span>
+                    <img src="images/codePreview3.jpg" alt="test image 1 billing">
+                    <p class="cardDrinkHolderTextImage">
+                        if you close your eyes <br/>
+                        you cannot see.
+                    </p>
+                </span></div>
                 <!-- start of 4 -->
-                <div class="cardCodeHolder" value="goodvibes">Need code preview here 4</div>
+                <div class="cardCodeHolder" value="goodvibes"><span>
+                    <img src="images/codePreview4.jpg" alt="test image 1">
+                    <p class="cardDrinkHolderTextImage">
+                        if you close your eyes <br/>
+                        you cannot see.
+                    </p>
+                </span></div>
                 <!-- start of 5 -->
-                <div class="cardCodeHolder" value="code5">Need code preview here 5</div>
+                <div class="cardCodeHolder" value="code5"><span>
+                    <img src="images/codePreview5.jpg" alt="test image 1">
+                    <p class="cardDrinkHolderTextImage">
+                        if you close your eyes <br/>
+                        you cannot see.
+                    </p>
+                </span></div>
                 <!-- start of 6 -->
-                <div class="cardCodeHolder" value="code6">Need code preview here 6</div>
+                <div class="cardCodeHolder" value="code6"><span>
+                    <img src="images/codePreview6.jpg" alt="test image 1">
+                    <p class="cardDrinkHolderTextImage">
+                        if you close your eyes <br/>
+                        you cannot see.
+                    </p>
+                </span></div>
                 <!-- start of 7 -->
-                <div class="cardCodeHolder" >filler card (card total needs to be odd)</div>
+                <div class="cardCodeHolder" > <h1>We'll be adding more codes soon!</h1></div>
             </div>
             <div class="carouselButtons">
-                <span id="leftClick">&lt;</span>
-                <span id="rightClick">></span>
+                 
+                <button id="leftClick" class="button button5">&lt;</button>
+                
+                <button id="rightClick" class="button button5">&gt;</button>
             </div>
 
 
@@ -339,74 +377,13 @@
                 selected.next().addClass("next");
             }
 
-            // function rightAnimation() {
-            //     $(".cardCode")
-            //         .stop(false, true)
-            //         .animate({
-            //             left: "+=" + "30%"
-            //         }, function() {
-            //             $(".cardCode").css({
-            //                 "left": "0"
-            //             });
-            //             $(".cardCodeHolder:first").after($(".cardCodeHolder:last"));
-            //         });
-            //     console.log(selected);
-            //     selected.removeClass("prev next");
-            //     selected.siblings().removeClass("prev active next");
-            //     selected.addClass("active");
-            //     selected.prev().addClass("prev");
-            //     selected.next().addClass("next");
-            // }
-            // $(".cardCodeHolder").click(function() {
-            //     selected = $(this)
-            //     console.log(selected)
-            //     if ($(this).hasClass("next")) {
-            //         $(".cardCode")
-            //             .stop(false, true)
-            //             .animate({
-            //                 left: "-=" + "30%"
-            //             }, function() {
-            //                 $(".cardCode").css({
-            //                     "left": "0"
-            //                 });
-            //                 $(".cardCodeHolder:last").after($(".cardCodeHolder:first"));
-                            
-            //             });
-            //     } else if ($(this).hasClass("prev")) {
-            //         $(".cardCode")
-            //             .stop(false, true)
-            //             .animate({
-            //                 left: "+=" + "30%"
-            //             }, function() {
-            //                 $(".cardCode").css({
-            //                     "left": "0"
-            //                 });
-            //                 $(".cardCodeHolder:first").before($(".cardCodeHolder:last"));
-            //             });
-            //     }
-            //     selected.removeClass("prev next");
-            //     selected.siblings().removeClass("prev active next");
-            //     selected.addClass("active");
-            //     selected.prev().addClass("prev");
-            //     selected.next().addClass("next");
-                
-            // });
             $(".cardCodeHolder").click(function(){
                 var code_name = $(this).attr("value");
-                window.location.href="/source-codes/codes.html?code_name="+code_name;
-            })
-            // Keyboard nav
-            $("html body").keydown(function(e) {
-                if (e.keyCode == 37) {
-                    // left
-                    selected = $(".cardCodeHolder.prev");
-                    slide();
-                } else if (e.keyCode == 39) {
-                    // right
-                    selected = $(".cardCodeHolder.next");
-                    slide();
+                if(code_name != undefined){
+                    window.location.href="/source-codes/codes.html?code_name="+code_name;
                 }
-            });
+            })
+            
             $("#leftClick").click(function() {
                 selected = $(".cardCodeHolder.prev");
                 slide();
